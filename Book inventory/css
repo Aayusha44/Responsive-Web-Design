@@ -1,0 +1,60 @@
+tr[class="read"] {
+  background-image: linear-gradient(to right, #c8f7c5, #ffffff);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #f7f3c5, #ffffff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #c5d9f7, #ffffff);
+}
+span {
+  display: inline-block;
+}
+tr[class="read"] span[class="status"] {
+  border: 1px solid green;
+  background-image: linear-gradient(to right, #7dff7d, #c8f7c5);
+}
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid orange;
+  background-image: linear-gradient(to right, #ffe29a, #fff3c5);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid blue;
+  background-image: linear-gradient(to right, #9ab8ff, #c5d9f7);
+}
+span[class="status"],
+span[class^="rate"] {
+  height: 25px;
+  width: 90px;
+  padding: 4px;
+}
+span[class^="rate"] > span {
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #eee;
+}
+span[class^="rate"] > span {
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #eee;
+}
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to right, gold, orange);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to right, gold, orange);
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(to right, gold, orange);
+}
