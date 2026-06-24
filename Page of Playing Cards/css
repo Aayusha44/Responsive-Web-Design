@@ -1,0 +1,50 @@
+#playing-cards{
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap;          
+  gap: 20px;                
+  padding: 20px;
+}
+.card{
+  justify-content: space-between;
+  display: flex;
+  gap:10px;
+}
+.left{
+  align-self: flex-start;
+  width:20px;
+  height:20px;
+  border:2px solid grey;
+  padding:10px;
+  text-align:center;
+  color:pink;
+  background-color:black;
+  
+}
+.middle{
+align-self: center;
+flex-direction: column;
+display: flex;
+width:20px;
+  height:20px;
+  border:2px solid grey;
+  padding:10px;
+  text-align:center;
+  color:pink;
+  background-color:black;
+  
+}
+.right{
+   align-self: flex-end;
+   width:40px;
+  height:40px;
+  border:2px solid grey;
+
+  text-align:center;
+  color:pink;
+    justify-content: center; background-color:black;
+  display: flex;
+   box-sizing: border-box;
+     align-items: center;    
+       
+}
