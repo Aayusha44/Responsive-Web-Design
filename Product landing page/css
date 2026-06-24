@@ -1,0 +1,85 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header & Nav - Sticky/Fixed Logic */
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex; /* Flexbox Requirement */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+#header-img {
+    height: 40px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Sections */
+main {
+    margin-top: 100px; /* Offset for fixed header */
+    padding: 20px;
+    text-align: center;
+}
+
+#hero {
+    padding: 50px 0;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#email {
+    padding: 10px;
+    width: 300px;
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin: 40px 0;
+}
+
+/* Media Query Requirement */
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+    
+    #nav-bar {
+        margin-top: 10px;
+    }
+}
